@@ -1,0 +1,41 @@
+# Root .gitignore for BankOps
+
+# Environment and Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Java and Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+*.class
+
+# Node and Vite
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.classpath
+.project
+.settings/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

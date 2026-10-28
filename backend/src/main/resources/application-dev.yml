@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:bankops}}
+    username: ${SPRING_DATASOURCE_USERNAME:${DB_USER:bankops}}
+    password: ${SPRING_DATASOURCE_PASSWORD:${DB_PASSWORD:bankops123}}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    com.bankops: DEBUG
+    org.springframework.security: INFO
+    org.flywaydb: INFO
